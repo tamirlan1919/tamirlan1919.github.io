@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiqcode</title>
+    <!-- CSS only -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d2d810dfd5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="pt">
+            <canvas id="canvas"></canvas>
+        </div>
+    
+        <div id="text">
+            <h1>Hello, I`m <span>Timerlan Chinchaev</span><br>I`m Fullstack web developer</h1>
+            <button onmousemove="kak()" onmouseout="posle()" ><a href="#projects" id="knopka">View my works</a>   <i class="bi bi-arrow-right" id="povorot"></i></button>
+        </div>
+    </section>
+    <section class="navv" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+        <div class="menu" id="menu" style="display: flex;">
+        <ul>
+            <li><a href="#home" id="homee" class="navbar">Home</a></li>
+            <li><a href="#about" id="aboutt" class="navbar">About</a></li>
+            <li><a href="#projects " id="projectss" class="navbar" >Portfolio</a></li>
+            <li><a href="#blog" id="blogg" class="navbar">Blog</a></li>
+            <li><a href="#contact" id="contactt" class="navbar">Contact</a></li>
+            
+        </ul>
+        
+
+        <button onclick="opennav()" id="list" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-list"></i>
+          </button>
+          
+          <div class="modal-nav" id="modal-nav">
+            <h1>Timerlan Chinchaev</h1>
+            <button id="exit" onclick="closenav()"><i class="bi bi-x-lg"></i></button>
+            <div class="container">
+                <div class="row">
+                    <div class="inf">
+                    <a href="/#home" onclick="closebut()">Home</a>
+                    <a href="/#about" onclick="closebut()">About</a>
+                    <a href="/#projects" onclick="closebut()">Portfolio</a>
+                    <a href="/#blog" onclick="closebut()">Blog</a>
+                    <a href="#contact" onclick="closebut()">Contact</a>
+                </div>
+                </div>
+            </div>
+          </div>
+          
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <section class="about">
+        <div class="main-about">
+        <div class="container">
+            <div class="row">
+                <div class="text animate__animated animate__bounceInLeft wow" data-wow-duration="1.5s">
+                    <h1>ABOUT</h1>
+                    <div class="chert animate__animated animate__bounceInLeft wow" data-wow-duration="2s" ></div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 ic-text ">
+                    <div class="wow animate__animated animate__flip">
+                    <i class="bi bi-speedometer" data-wow-duration="1.5s"></i></div>
+                    <h1>Fast</h1>
+                    <p>Fast load times and lag free interaction, my highest priority.</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 ic-text">
+                    <div class="wow animate__animated animate__flip" data-wow-duration="1.5s"> <i class="bi bi-laptop"></i></div>
+                    <h1>Responsive</h1>
+                    <p>My layouts will work on any device, big or small.</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 ic-text">
+                    <div class="wow animate__animated animate__flip" data-wow-duration="1.5s"> <i class="bi bi-lightbulb"></i> </div>
+                    <h1>Intuitive</h1>
+                    <p>Strong preference for easy to use, intuitive UX/UI.</p>
+                </div>
+                <div class=" col-xl-3 col-lg-3 col-md-6 col-sm-12 ic-text">
+                    <div class="wow animate__animated animate__flip" data-wow-duration="1.5s"> <i class="fa-solid fa-shuttle-space"></i> </div>
+                    <h1 class="ton">Dynamic</h1>
+                    <p>Websites don't have to be static, I love making pages come to life.</p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="img col-xl-6 col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__backInLeft" data-wow-offset="10">
+                    <img src="img/marr.jpg" alt="">
+                    <h1>Who is this guy? </h1>
+                    <p>I am a Fullstack developer
+                        I have a serious passion for user interface effects, animation and creating an intuitive, dynamic user interface, as well as making interactions between each component on the backend.<br><a href="#contact">Let's do something special.</a></p>
+                </div>
+                <div class="skills col-xl-6 col-lg-6 col-md-12 col-sm-12 wow animate__animated animate__backInRight">
+                    <div class="main">
+                        <div class="left python">
+                            <div class="text2">
+                                <span>Python</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>90%</p>
+                    </div>
+                    
+                    <div class="main">
+                        <div class="left html">
+                            <div class="text2">
+                                <span>HTML</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>90%</p>
+                    </div>
+
+                    <div class="main">
+                        <div class="left css">
+                            <div class="text2">
+                                <span>CSS</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>85%</p>
+                    </div>
+
+                    <div class="main">
+                        <div class="left ui">
+                            <div class="text2">
+                                <span>UI</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>50%</p>
+                    </div>
+
+                    <div class="main">
+                        <div class="left figma">
+                            <div class="text2">
+                                <span>Figma</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>65%</p>
+                    </div>
+
+                    <div class="main">
+                        <div class="left sql">
+                            <div class="text2">
+                                <span>SQL</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>90%</p>
+                    </div>
+
+                    <div class="main">
+                        <div class="left docker">
+                            <div class="text2">
+                                <span>Docker</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>20%</p>
+                    </div>
+                    <div class="main">
+                        <div class="left django">
+                            <div class="text2">
+                                <span>Django</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>40%</p>
+                    </div>
+
+                    <div class="main">
+                        <div class="left linux">
+                            <div class="text2">
+                                <span>Linux</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>45%</p>
+                    </div>
+
+                    
+                    <div class="main">
+                        <div class="left tcp">
+                            <div class="text2">
+                                <span>TCP/IP</span>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    <p>50%</p>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    </section>
+
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="inf-proj">
+                    <h1 class="animate__animated animate__bounceInLeft wow" data-wow-duration="1.5s">PORTFOLIO</h1>
+                    <div class="chert animate__animated animate__bounceInLeft wow" data-wow-duration="2s" ></div>
+                    </div>
+                <div class="proj-tabs">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="navv-link active" data-toggle="tab" href="#home1">ALL</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="navv-link" data-toggle="tab" href="#menu1">PYTHON</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="navv-link" data-toggle="tab" href="#menu2">WEB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navv-link" data-toggle="tab" href="#menu3">ANDROID</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="navv-link" data-toggle="tab" href="#menu4">C# .NET</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="navv-link" data-toggle="tab" href="#menu5">UE</a>
+                          </li>
+                      </ul>
+                    
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div id="home1" class="container tab-pane active"><br>
+                            <div class="row" style="justify-content: center;">
+                            <div class=" animate__animated animate__zoomIn wow col-sm-12 col-md-6 im" data-wow-duration="0.8s"  style="">
+                                
+                                <div class="mod" id="mod" >
+                                    <div class="info-mod">
+                                    <h1 >Bot</h1>
+                                    <p>Python / Telebot</p>
+                                    <button><a href="https://t.me/utuubesave_bot" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="animate__animated animate__zoomIn  wow col-sm-12 col-md-6 im im2"  data-wow-duration="1s" style="  ">
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Bot</h1>
+                                    <p>Telegram / Telebot</p>
+                                    <button><a href="https://t.me/shef_plov_bot" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+ 
+                            </div>
+                              <div class=" animate__animated animate__zoomIn  im im3 wow col-sm-12 col-md-6" data-wow-duration="1.1s" style="  border: 0; padding: 0;">
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Assistent</h1>
+                                    <p>Desktop / PyQt5</p>
+                                    <button><a href="https://github.com/tamirlan1919/JarvisAI" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+                        
+         
+                              </div>
+                              <div class=" animate__animated animate__zoomIn wow im im4 col-sm-12 col-md-6" data-wow-duration="1.2s" style="">
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Game</h1>
+                                    <p>Desktop / PyGame</p>
+                                    <button><a href="https://github.com/tamirlan1919/Snake-Game" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+              
+   
+                            </div>
+                            <div class=" animate__animated animate__zoomIn  wow  im im5 col-sm-12 col-md-6" data-wow-duration="1s" style="">
+                               
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Parse</h1>
+                                    <p>Desktop / Requests/ BS4</p>
+                                    <button><a href="https://github.com/tamirlan1919/Shop-Parsing" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class=" animate__animated animate__zoomIn  wow im im6 col-sm-12 col-md-6" data-wow-duration="1.1s" style="">
+                                
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Data Parsing</h1>
+                                    <p>Desktop / Requests/ BS4</p>
+                                    <button><a href="https://colab.research.google.com/drive/1qvFNHiOlF1QJQbmrJ9OQXDMesQ35mbpj?usp=sharing" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+                            </div>
+                            <div class=" animate__animated animate__zoomIn im im7  wow col-sm-12 col-md-6" data-wow-duration="1.2s" style="  ">
+                                
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Face Recognation</h1>
+                                    <p>Web / JS</p>
+                                    <button><a href="https://github.com/tamirlan1919/Face-Recognation" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class=" animate__animated animate__zoomIn im imsite  wow col-sm-12 col-md-6" data-wow-duration="1.2s" style="  ">
+                                
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Web site order food</h1>
+                                    <p>Web / HTML/CSS/JS</p>
+                                    <button><a href="https://github.com/tamirlan1919/Web-site-Order-food" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class=" animate__animated animate__zoomIn im im8 wow col-sm-12 col-md-6" data-wow-duration="1.3s" style="  ">
+                                
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Mobile Chat</h1>
+                                    <p>Mobile / Kotlin</p>
+                                    <button><a href="https://github.com/tamirlan1919/Chat" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class=" animate__animated animate__zoomIn im im9  wow  col-sm-12 col-md-6" data-wow-duration="1s" style="  ">
+                                
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Data Accounting</h1>
+                                    <p>Desktop / C# NET</p>
+                                    <button><a href="https://github.com/tamirlan1919/Data-accounting" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class=" animate__animated animate__zoomIn im im10 wow col-sm-12 col-md-6" data-wow-duration="1.1s" style="  ">
+                                
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Car Configurator</h1>
+                                    <p>Desktop / UE</p>
+                                    <button><a href="https://github.com/tamirlan1919/Data-accounting" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class=" animate__animated animate__zoomIn im im11 wow col-sm-12 col-md-6"  data-wow-duration="1.2s" style="  ">
+                               
+                                <div class="mod">
+                                    <div class="info-mod">
+                                    <h1>Architectural visualization</h1>
+                                    <p>Desktop / UE</p>
+                                    <button><a href="https://drive.google.com/drive/folders/1u1YJqL0sox4JLya3N8K2Dj2CRPzRlkvy" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+
+                                </div>
+                                </div>
+                            </div>
+
+                              </div>
+                        </div>
+                        <div id="menu1" class="container tab-pane fade"><br>
+                            <div class="row" style="justify-content: center;">
+                                <div class=" animate__animated animate__zoomIn wow col-sm-12 col-md-6 im" data-wow-duration="0.8s"  style="">
+                                
+                                    <div class="mod" id="mod" >
+                                        <div class="info-mod">
+                                        <h1 >Bot</h1>
+                                        <p>Python / Telebot</p>
+                                        <button><a href="https://t.me/utuubesave_bot" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="animate__animated animate__zoomIn  wow col-sm-12 col-md-6 im im2"  data-wow-duration="1s" style="  ">
+                                    <div class="mod">
+                                        <div class="info-mod">
+                                        <h1>Bot</h1>
+                                        <p>Telegram / Telebot</p>
+                                        <button><a href="https://t.me/shef_plov_bot" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+    
+                                    </div>
+                                    </div>
+     
+                                </div>
+                                  <div class=" animate__animated animate__zoomIn  im im3 wow col-sm-12 col-md-6" data-wow-duration="1.1s" style="  border: 0; padding: 0;">
+                                    <div class="mod">
+                                        <div class="info-mod">
+                                        <h1>Assistent</h1>
+                                        <p>Desktop / PyQt5</p>
+                                        <button><a href="https://github.com/tamirlan1919/JarvisAI" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+    
+                                    </div>
+                                    </div>
+                            
+             
+                                  </div>
+                                  <div class=" animate__animated animate__zoomIn wow im im4 col-sm-12 col-md-6" data-wow-duration="1.2s" style="">
+                                    <div class="mod">
+                                        <div class="info-mod">
+                                        <h1>Game</h1>
+                                        <p>Desktop / PyGame</p>
+                                        <button><a href="https://github.com/tamirlan1919/Snake-Game" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+    
+                                    </div>
+                                    </div>
+                  
+       
+                                </div>
+                                <div class=" animate__animated animate__zoomIn  wow  im im5 col-sm-12 col-md-6" data-wow-duration="1s" style="">
+                                   
+                                    <div class="mod">
+                                        <div class="info-mod">
+                                        <h1>Parse</h1>
+                                        <p>Desktop / Requests/ BS4</p>
+                                        <button><a href="https://github.com/tamirlan1919/Shop-Parsing" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+                                    </div>
+                                    </div>
+                                </div>
+                                
+                                <div class=" animate__animated animate__zoomIn  wow im im6 col-sm-12 col-md-6" data-wow-duration="1.1s" style="">
+                                    
+                                    <div class="mod">
+                                        <div class="info-mod">
+                                        <h1>Data Parsing</h1>
+                                        <p>Desktop / Requests/ BS4</p>
+                                        <button><a href="https://colab.research.google.com/drive/1qvFNHiOlF1QJQbmrJ9OQXDMesQ35mbpj?usp=sharing" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+    
+                                    </div>
+                                    </div>
+                                </div>
+    
+    
+                                  </div>
+                        </div>
+                        <div id="menu2" class="container tab-pane fade"><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class=" animate__animated animate__zoomIn im im7  wow col-sm-12 col-md-6" data-wow-duration="1.2s" style="  ">
+                                
+                                        <div class="mod">
+                                            <div class="info-mod">
+                                            <h1>Face Recognation</h1>
+                                            <p>Web / JS</p>
+                                            <button><a href="https://github.com/tamirlan1919/Face-Recognation" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+        
+                                        </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class=" animate__animated animate__zoomIn im imsite  wow col-sm-12 col-md-6" data-wow-duration="1.2s" style="  ">
+                                        
+                                        <div class="mod">
+                                            <div class="info-mod">
+                                            <h1>Web site order food</h1>
+                                            <p>Web / HTML/CSS/JS</p>
+                                            <button><a href="https://github.com/tamirlan1919/Web-site-Order-food" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+        
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="menu3" class="container tab-pane fade"><br>
+                            <div class="container">
+                                <div class="row">
+
+                            
+                                    <div class=" animate__animated animate__zoomIn im im8 wow col-sm-12 col-md-6" data-wow-duration="1.3s" style="  ">
+                                
+                                        <div class="mod">
+                                            <div class="info-mod">
+                                            <h1>Mobile Chat</h1>
+                                            <p>Mobile / Kotlin</p>
+                                            <button><a href="https://github.com/tamirlan1919/Chat" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+        
+                                        </div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="menu4" class="container tab-pane fade"><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class=" animate__animated animate__zoomIn im im9  wow  col-sm-12 col-md-6" data-wow-duration="1s" style="  ">
+                                
+                                        <div class="mod">
+                                            <div class="info-mod">
+                                            <h1>Data Accounting</h1>
+                                            <p>Desktop / C# NET</p>
+                                            <button><a href="https://github.com/tamirlan1919/Data-accounting" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+        
+                                        </div>
+                                        </div>
+                                    </div>
+  
+                                </div>
+                            </div>
+ 
+                        </div>
+
+
+                        <div id="menu5" class="container tab-pane fade"><br>
+                            <div class="container">
+                                <div class="row">
+                                    <div class=" animate__animated animate__zoomIn im im10 wow col-sm-12 col-md-6" data-wow-duration="1.1s" style="  ">
+                                
+                                        <div class="mod">
+                                            <div class="info-mod">
+                                            <h1>Car Configurator</h1>
+                                            <p>Desktop / UE</p>
+                                            <button><a href="https://github.com/tamirlan1919/Data-accounting" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+        
+                                        </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class=" animate__animated animate__zoomIn im im11 wow col-sm-12 col-md-6"  data-wow-duration="1.2s" style="  ">
+                                       
+                                        <div class="mod">
+                                            <div class="info-mod">
+                                            <h1>Architectural visualization</h1>
+                                            <p>Desktop / UE</p>
+                                            <button><a href="https://drive.google.com/drive/folders/1u1YJqL0sox4JLya3N8K2Dj2CRPzRlkvy" style=" text-decoration: none;" target="_blank" >Learn More</a></button>
+        
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                      </div>
+                </div>
+                </div>
+            
+        </div>
+    </section>
+
+
+
+    
+
+    <div class="modal0" id="modal0"  style="width: 80%; display: block; position: absolute; top: 0; left: 0;">
+        <div class="container">
+            <div class="row" >
+                <!-- Modal -->
+                <div class="modal fade" id="down" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="img/donw1.jpg" class="d-block w-100" alt="...">
+                                  </div>
+<!--                                   <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="img/shef2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/shef3.jpg" class="d-block w-100" alt="...">
+                                  </div> -->
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                              <hr>
+                              <h1>Телеграм бот для "Скачивание видео и аудио"</h1>
+                              <p>Удобный телеграм бот для скачивания видео и аудио из Yotube</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"><a href="https://t.me/shef_plov_bot">View</a> </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="mod0" id="mod0">
+    <div class="container">
+        <div class="main">
+            <div class="img-main">
+        <div class="img">
+            <button><i class="bi bi-arrow-left"></i></button>
+            <button ><i class="bi bi-arrow-right"></i></button>
+        </div>
+    </div>
+        <div class="info">
+            
+            <h1>Скачивание видео и аудио </h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore blanditiis consequuntur non? Voluptatibus aliquam enim, mollitia ratione dolores doloremque eum neque? Perspiciatis quisquam, nisi nemo totam eaque et error.</p>
+            <button>View</button>
+            <button onclick="mod0close()"><i class="bi bi-x-lg"></i></button>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+
+    <div class="modal1"  style="width: 80%;">
+        <div class="container">
+            <div class="row" >
+                <!-- Modal -->
+                <div class="modal fade" id="shef" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="img/shef.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="img/shef2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="img/shef3.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                              <hr>
+                              <h1>Телеграм бот "Шеф-Плов"</h1>
+                              <p>Удобный телеграм бот для заказы еды, через мессенджер телеграм, также там можно произвести олпату и отправить геоданные для доставки</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"><a href="https://t.me/shef_plov_bot">View</a> </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal2">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal3">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal4">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal5">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal6">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal7">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal8">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal9">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="modal10">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+
+<!--Blog-->
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="bl">
+                    <h1 class="animate__animated animate__bounceInLeft wow" data-wow-duration="1.5s">BLOG</h1>
+                    <div class="chert animate__animated animate__bounceInLeft wow" data-wow-duration="2s" ></div>
+
+                </div>
+                <div class="col" style="  ">
+                    <h2>Development of a voice assistant</h2>
+                    <p>28 September,2020</p>
+                    <img src="https://img.freepik.com/free-photo/turned-on-gray-laptop-computer_400718-47.jpg?w=1380&t=st=1658961408~exp=1658962008~hmac=41c78a9a6530ac6a7254a256b3cbe4dbf58ef0c6f9ebda0f68fb0545098cff7b" class="animate__animated animate__slideInLeft wow" alt="">
+                    <p class="animate__animated animate__slideInRight wow">Voice assistants are most often used in smartphones, smart speakers, and web browsers. The first full-fledged voice assistant in its modern form, Apple Siri, appeared on August 9, 2011. It was developed by SRI International Artificial Intelligence Center. And soon Google Assistant, Amazon Alexa, Microsoft Cortana and "Alice" from Russian Yandex were added to Siri. The program of the voice assistant constantly listens to keywords, and then they are processed algorithmically. As soon as the assistant hears the keyword, he records the user's voice and sends it to a specialized server, which processes and interprets it as a command. Depending on the command, the server supplies the voice assistant with the necessary information that the user can read or play media, or perform tasks with various connected devices. The number of services that support voice communication of commands is growing rapidly, and manufacturers of IoT devices are also embedding voice control in their products. Apple's Siri assistant has been around the longest, released as a standalone app in 2010 and integrated into iOS in 2011. Shortly after, Microsoft followed Cortana in 2013. Amazon launched Alexa with its Echo-connected home speaker in 2014, and Google Assistant was announced in 2016 with its home speaker, as well as embedded in Google's Android smartphone app. Each assistant has its own unique features, but the main functionality is the same. Voice assistants differ from previously voice-activated technologies in that they can respond to a much larger number of commands and questions, because they must always be connected to the Internet. Voice assistants are needed: - for drivers - it is convenient to use while driving; - parents – for the entertainment of the child (playing a song or telling a fairy tale); - businessmen - will schedule a meeting, remind about the event; - schoolchildren / students - will find the necessary information on the Internet; - people with disabilities <a href="https://t.me/tiqcode">Read more....</a>
+                        </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!--Contact-->
+
+    <section class="contact" id="contact">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+            <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+          </svg>
+        <div class="container">
+            <div class="row">
+                <div class="con">
+                    <h1 class="animate__animated animate__bounceInLeft wow" data-wow-duration="1.5s">Contact</h1>
+                    <div class=" chert1 animate__animated animate__bounceInLeft wow" data-wow-duration="2s" ></div>
+                    <p class="animate__animated animate__bounceInRight wow" data-wow-duration="1.5s">Have a question or want to work together?</p>
+                </div>
+                <div class="colll animate__animated animate__bounceInRight wow col-xl-12 col-lg-12 col-md-12 col-sm-12" data-wow-duration="2s" >
+                    <form action="main.php" method="post" onsubmit="return checkform(this)" >
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="Last name" name="lname"><br>
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="tel" placeholder="Phone" name="phone"><br>
+                    <textarea name=""  placeholder="Message" name="message"></textarea><br>
+                    <button>Submit</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="arrow">
+                    <a href="#home"><i class="bi bi-arrow-up-circle"></i></a>
+                </div>
+                <div class="os">
+                    <div class="coll"><a href=""><i class="bi bi-linkedin"></i></a></div>
+                    <div class="coll"><a href="https://t.me/tiqtim"><i class="bi bi-telegram"></i></a></div>
+                    <div class="coll"><a href="https://instagram.com/chinchaev_jr/"><i class="bi bi-instagram"></i></a></div>
+                    <div class="coll"><a href="https://github.com/tamirlan1919"><i class="bi bi-github"></i></a></div>
+                </div>
+                <p>Timerlan Chinchaev <span>©2022</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="animationLoader">
+
+        <svg class="animationLoader__image" role="img" xmlns="http://путь до SVG-картинки на вашем сайте" viewBox="0 0 512 512">
+      
+          <path fill="currentColor"
+      
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      
+          </path>
+      
+        </svg>
+      
+      </div>
+
+      <script>
+/*         
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if ((document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) && (document.body.scrollTop < 900 || document.documentElement.scrollTop < 900)) {
+            document.getElementById("homee").style.color = "#e31b6d";
+        }
+        else if(document.body.scrollTop > 900 || document.documentElement.scrollTop > 900){
+            document.getElementById("aboutt").style.color = "#e31b6d";
+            document.getElementById("homee").style.color = "#fff";
+        }
+        else {
+            document.getElementById("homee").style.color = "#fff";
+        }
+} */
+
+    function checkform(){
+        return true
+    }
+
+    window.onscroll = function(){scrollFunction()};
+    function scrollFunction() {
+        if(document.body.scrollTop >0 || document.documentElement.scrollTop >0){
+            document.getElementById("homee").style.color = "#e31b6d";
+            document.getElementById("aboutt").style.color = "#fff";
+            document.getElementById("projectss").style.color = "#fff";
+            document.getElementById("blogg").style.color = "#fff";
+            document.getElementById("contactt").style.color = "#fff";
+        }
+        if(document.body.scrollTop > 900 || document.documentElement.scrollTop > 900){
+            document.getElementById("aboutt").style.color = "#e31b6d";
+            document.getElementById("homee").style.color = "#fff";
+            document.getElementById("projectss").style.color = "#fff";
+            document.getElementById("blogg").style.color = "#fff";
+            document.getElementById("contactt").style.color = "#fff";
+        }
+        if(document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000){
+            document.getElementById("projectss").style.color = "#e31b6d";
+            document.getElementById("homee").style.color = "#fff";
+            document.getElementById("aboutt").style.color = "#fff";
+            document.getElementById("blogg").style.color = "#fff";
+            document.getElementById("contactt").style.color = "#fff";
+        }
+        if(document.body.scrollTop > 3400 || document.documentElement.scrollTop > 3400){
+            document.getElementById("blogg").style.color = "#e31b6d";
+            document.getElementById("homee").style.color = "#fff";
+            document.getElementById("aboutt").style.color = "#fff";
+            document.getElementById("projectss").style.color = "#fff";
+            document.getElementById("contactt").style.color = "#fff";
+        }
+        if(document.body.scrollTop > 3900 || document.documentElement.scrollTop > 3900){
+            document.getElementById("contactt").style.color = "#e31b6d";
+            document.getElementById("homee").style.color = "#fff";
+            document.getElementById("aboutt").style.color = "#fff";
+            document.getElementById("projectss").style.color = "#fff";
+            document.getElementById("blogg").style.color = "#fff";
+        }
+    }
+
+    </script>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+          window.onload = function () {
+
+            document.body.classList.add('animation_hiding');
+
+            window.setTimeout(function () {
+
+            document.body.classList.add('animation');
+
+            document.body.classList.remove('animation_hiding');
+
+            }, 600);
+
+            }
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
