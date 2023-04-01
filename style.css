@@ -29,7 +29,7 @@ img{
     border: none;
     background: rgb(248, 168, 24);
     
-    color: var(--tg-theme-text-color);
+    color: var(--tg-theme-button-color);
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
