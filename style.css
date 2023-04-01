@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 18px;
-    color:var(--th-theme-text-color);
+    
     background-color: var(--tg-theme-bg-color);
 }
 
@@ -11,14 +11,16 @@ body{
     
 }
 .inner{
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 250px 250px 250px;
 }
 img{
     width: 150px;
 }
 .item{
+    
     text-align: center;
 }
 .btn{
@@ -26,12 +28,15 @@ img{
     padding: 10px 20px;
     border: none;
     background: rgb(248, 168, 24);
+    
+    color: var(--tg-theme-text-color);
     color: #fff;
+    font-weight: 700;
     text-transform: uppercase;
     border-radius: 10px;
 }
 
 .inner .item .info{
-    color: var(--tg-theme-text-color);
+    color: var(--tg-theme-link-color)
     
 }
