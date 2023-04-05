@@ -34,6 +34,11 @@ img{
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 10px;
+    transition: background .2s lenear;
+}
+.btn:hover{
+    
+    background: lightgreen;
 }
 
 .inner .item .info{
